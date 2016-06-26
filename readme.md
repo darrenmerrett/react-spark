@@ -36,7 +36,7 @@ Finally, publish files into resources.
 
 ## Building your app
 
-Start building your React app inside 
+Start creating your React app inside 
 
 	resources\assets\js.
 
@@ -44,9 +44,15 @@ Include your React Components into
 
 	resources\assets\js\index.js i.e. require('./my-component.js');
 
+You can safely edit Blade 'sections' here
+
+	resources\views\react-spark\reactApp.blade.php
+
 Next, add the following to your app blade files. This will include your JS bundle and the Spark nav bar.
 
 	@extends('react-spark-vendor::appReact')
+
+## Building your app
 
 To build your app for development:
 
