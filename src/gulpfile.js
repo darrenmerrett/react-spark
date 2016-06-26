@@ -59,7 +59,6 @@ elixir(function(mix) {
       './public/js/common.js', null,{ paths: 'resources/assets/js'})
 
       .styles(['../../../node_modules/react-spark-js/css/react-spark.css',], 'public/css/react-spark.css')
-      .copy('node_modules/react-datetime/css/react-datetime.css','public/css/react-datetime.css')  
       .copy('node_modules/react-spark-js/css/react-spark.css','public/css/react-spark.css')  
       .styles(['reactApp.css',], 'public/css/reactApp.css')
       .styles(['../../../node_modules/react-spark-js/css/common.css',], 'public/css/common.css')
@@ -80,7 +79,6 @@ elixir(function(mix) {
 
               'css/react-spark.css',              
               'css/react-dm-bootstrap.css',
-              'css/react-datetime.css',
               'css/reactApp.css',
        ]);      
 

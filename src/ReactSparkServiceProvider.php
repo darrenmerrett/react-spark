@@ -26,6 +26,13 @@ class ReactSparkServiceProvider extends ServiceProvider
             
         ]);
 
+        $this->publishes([
+    
+            __DIR__.'/resources/assets/css/reactApp/' => base_path('resources/assets/css/reactApp/'),
+          
+
+        ]);
+
         $this->loadViewsFrom(__DIR__.'/resources/views/vendor', 'react-spark-vendor');     
 
         $this->loadViewsFrom(base_path('resources/views/react-spark'), 'react-spark');     
