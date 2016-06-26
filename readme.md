@@ -34,7 +34,7 @@ Finally, publish files into resources.
 
 	php artisan vendor:publish --provider="darrenmerrett\ReactSpark\ReactSparkServiceProvider"
 
-## Building your app
+## Creating your app
 
 Start creating your React app inside 
 
