@@ -1,0 +1,22 @@
+{
+    "name": "darrenmerrett/react-spark",
+    "description": "React Spark",
+    "keywords": ["laravel", "spark","react"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darren Merrett",
+            "email": "darren.merrett@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+	},
+	"require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "darrenmerrett\\ReactSpark\\": "src/"
+        }
+    }
+}
