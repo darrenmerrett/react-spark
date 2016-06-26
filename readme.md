@@ -30,6 +30,10 @@ Add the ReactSpark\ServiceProvider to your config/app.php providers array:
 
 	'darrenmerrett\ReactSpark\ReactSparkServiceProvider'
 
+Finally, publish files into resources.
+
+	php artisan vendor:publish --provider="darrenmerrett\ReactSpark\ReactSparkServiceProvider"
+
 ## Building your app
 
 Start building your React app inside 
