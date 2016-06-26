@@ -20,7 +20,7 @@ This extension separates your project into 2 modules. The Spark Core remains as 
 
 Require the darrenmerrett/react-spark package in your composer.json and update your dependencies.
 
-	composer require react-spark
+	composer require darrenmerrett/react-spark
 
 Install npm modules with dependancies
 
