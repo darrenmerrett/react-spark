@@ -60,7 +60,7 @@ elixir(function(mix) {
 
       .styles(['../../../node_modules/react-spark-js/css/react-spark.css',], 'public/css/react-spark.css')
       .copy('node_modules/react-spark-js/css/react-spark.css','public/css/react-spark.css')  
-      .styles(['reactApp.css',], 'public/css/reactApp.css')
+      .styles(['reactApp/reactApp.css',], 'public/css/reactApp.css')
       .styles(['../../../node_modules/react-spark-js/css/common.css',], 'public/css/common.css')
       .styles(['../../../public/css/common.css','../../../public/css/app.css'], 'public/css/app.css')
       .styles(['../../../node_modules/react-dm-bootstrap/dist/react-dm-Bootstrap.css',],'public/css/react-dm-Bootstrap.css')
