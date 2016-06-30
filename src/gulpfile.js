@@ -51,6 +51,8 @@ elixir(function(mix) {
       .copy('node_modules/react-spark-js/fonts/', 'public/fonts')       
       .copy('node_modules/react-spark-js/fonts/', 'public/build/fonts')
 
+      .scripts('../../../node_modules/whatwg-fetch/fetch.js', 'public/js/fetch.js')
+
       .browserify([
         './vendor/darrenmerrett/react-spark/src/resources/assets/js/react-spark/react-spark.js',
         './vendor/darrenmerrett/react-spark/src/resources/assets/js/react-spark/reactApp.js',

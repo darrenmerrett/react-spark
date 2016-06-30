@@ -22,6 +22,8 @@
 
     <link href="/css/sweetalert.css" rel="stylesheet">
 
+    <script src="{{ elixir('js/fetch.js') }}"></script>
+
     <!-- Scripts -->
     @yield('scripts', '')
 
