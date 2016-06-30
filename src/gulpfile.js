@@ -79,6 +79,8 @@ elixir(function(mix) {
               'js/common.js',
               'js/dropdown.js',
 
+              'js/fetch.js',
+
               'css/react-spark.css',              
               'css/react-dm-bootstrap.css',
               'css/reactApp.css',

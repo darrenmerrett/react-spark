@@ -16,7 +16,6 @@
     <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
     <link href="{{ elixir('css/react-spark.css') }}" rel="stylesheet">
     <link href="{{ elixir('css/common.css') }}" rel="stylesheet">
-    <link href="{{ elixir('css/react-datetime.css') }}" rel="stylesheet">
 
     <link href="{{ elixir('css/react-dm-bootstrap.css') }}" rel="stylesheet">
 
