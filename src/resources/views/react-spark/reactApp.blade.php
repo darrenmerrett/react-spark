@@ -6,6 +6,12 @@
 
 @endsection
 
+@section('content')
+
+	<reactsparkapp></reactsparkapp>
+
+@endsection
+
 @section('footer-scripts')
 	
 	@yield('footer-scripts')

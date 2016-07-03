@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('title', 'Rickster\'s Gig Guide')</title>
+    <title>@yield('title', 'React Spark')</title>
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
@@ -42,11 +42,9 @@
             @include('spark::nav.guest')
         @endif
 
-        <!-- Main Content -->
         @yield('content')
 
         @if (Auth::check())
-            @include('spark::modals.notifications')
             @include('spark::modals.session-expired')
         @endif
 

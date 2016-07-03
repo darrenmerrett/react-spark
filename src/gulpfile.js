@@ -10,7 +10,6 @@ elixir.config.js.browserify.plugins.push(
           outputs: [
             'public/js/react-spark.js',
             'public/js/reactApp.js',
-            'public/js/dropdown.js'
           ]
         }
     }
@@ -56,7 +55,6 @@ elixir(function(mix) {
       .browserify([
         './vendor/darrenmerrett/react-spark/src/resources/assets/js/react-spark/react-spark.js',
         './vendor/darrenmerrett/react-spark/src/resources/assets/js/react-spark/reactApp.js',
-        './vendor/darrenmerrett/react-spark/src/resources/assets/js/react-spark/dropdown.js'
       ],
       './public/js/common.js', null,{ paths: 'resources/assets/js'})
 

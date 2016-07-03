@@ -34,11 +34,21 @@ Finally, publish files into resources.
 
 	php artisan vendor:publish --provider="darrenmerrett\ReactSpark\ReactSparkServiceProvider"
 
+## Upgrading
+
+Update the darrenmerrett/react-spark package.
+
+	composer update darrenmerrett/react-spark
+
+Then update the npm modules
+
+	npm update react-spark-js
+
 ## Creating your app
 
 Start creating your React app inside 
 
-	resources\assets\js.
+	resources\assets\js\
 
 Include your React Components into 
 
@@ -50,7 +60,7 @@ You can safely edit Blade 'sections' here
 
 Next, add the following to your app blade files. This will include your JS bundle and the Spark nav bar.
 
-	@extends('react-spark-vendor::appReact')
+	@extends('react-spark.reactApp')
 
 ## Building your app
 
@@ -66,7 +76,60 @@ To "watch" for file changes whilst your creating your app
 
 	php artisan react-spark:build watch
 
-	php artisan react-spark:build watch --production 
+	php artisan react-spark:build watch --production
+
+## Using Redux 
+
+First, add your [reducers](http://redux.js.org/docs/basics/Reducers.html) in resources\assets\js\reactApp\reducers.js
+
+Access the store dispatch method by adding the following statement after your component.
+
+	YourComponent.contextTypes = { store: React.PropTypes.object };
+
+Then format your constructor as follows
+
+```
+constructor(props,context) {
+
+    super(props,context);
+
+}
+```
+
+You can now access the store dispatch method as follows
+
+	this.context.store.dispatch(YOUR_ACTION);
+
+To access your store add the dependancy
+
+	import {connect} from 'react-redux';
+
+Then add the following code after your component
+
+```
+function mapStateToProps(state) {
+
+  return {
+    YOUR_STORE: state.YOUR_STORE,
+  };
+
+}
+
+function mapDispatchToProps(dispatch) {
+  return {};
+}
+
+function mergeProps(stateProps, dispatchProps, ownProps) {
+
+  return Object.assign({}, stateProps, ownProps);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(YOUR_COMPONENT);
+```
+
+You can now access your store through props
+
+	this.props.YOUR_STORE;
 
 ## License
 
