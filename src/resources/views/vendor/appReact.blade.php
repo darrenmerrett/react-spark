@@ -52,7 +52,6 @@
 
         <script src="{{ elixir('js/common.js') }}"></script>
         <script src="{{ elixir('js/react-spark.js') }}"></script>
-        <script src="{{ elixir('js/dropdown.js') }}"></script>
 
         @yield('footer-scripts')
 
