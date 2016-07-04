@@ -1,7 +1,10 @@
 var elixir = require('laravel-elixir'),
   gulp = require('gulp'),
   browserify = require('browserify'),
-  source = require('vinyl-source-stream');
+  source = require('vinyl-source-stream'),
+  buffer = require('vinyl-buffer'),
+  babelify = require('babelify'),
+  uglify = require('gulp-uglify');
 
 elixir.config.js.browserify.plugins.push(
     {
@@ -18,8 +21,11 @@ elixir.config.js.browserify.plugins.push(
 gulp.task('build-spark-app', function() {
 
     return browserify('resources/assets/js/app.js', { paths: 'vendor/laravel/spark/resources/assets/js' })
+      .transform(babelify, { presets: ["es2015"] })
       .bundle()
       .pipe(source('app.js'))
+      .pipe(buffer())
+      .pipe(uglify())
       .pipe(gulp.dest('./public/js/'));
 
 });
