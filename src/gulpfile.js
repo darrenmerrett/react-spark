@@ -81,7 +81,6 @@ elixir(function(mix) {
               'js/react-spark.js',
               'js/reactApp.js',
               'js/common.js',
-              'js/dropdown.js',
 
               'js/fetch.js',
 
