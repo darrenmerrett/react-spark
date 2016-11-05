@@ -5,7 +5,7 @@ var elixir = require('laravel-elixir'),
   buffer = require('vinyl-buffer'),
   babelify = require('babelify'),
   uglify = require('gulp-uglify');
-
+require('laravel-elixir-browserify-official');
 elixir.config.js.browserify.plugins.push(
     {
         name: 'factor-bundle',
